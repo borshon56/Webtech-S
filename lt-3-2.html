@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task 03 - Arrays and Objects</title>
+</head>
+<body>
+
+<h1>JavaScript Arrays and Objects</h1>
+
+<h2>Course List</h2>
+<div id="courses"></div>
+
+<h2>Array Operations</h2>
+<div id="operations"></div>
+
+<h2>Student Object</h2>
+<div id="studentInfo"></div>
+
+<h2>Array of Students</h2>
+<div id="studentsList"></div>
+
+<script>
+
+
+let courses = ["Web Development", "Data Structures", "Database", "Networking", "Operating Systems"];
+
+let courseOutput = "";
+
+for(let i = 0; i < courses.length; i++){
+    courseOutput += courses[i] + "<br>";
+}
+
+document.getElementById("courses").innerHTML = courseOutput;
+
+
+courses.push("Artificial Intelligence");
+
+courseOutput = "<br><b>After Adding New Course:</b><br>";
+
+for(let i = 0; i < courses.length; i++){
+    courseOutput += courses[i] + "<br>";
+}
+
+document.getElementById("courses").innerHTML += courseOutput;
+
+
+
+
+let result = "";
+
+result += "Array Length: " + courses.length + "<br>";
+
+courses.pop();
+
+courses.unshift("Computer Fundamentals");
+
+result += "<br>Final Array:<br>";
+
+for(let i = 0; i < courses.length; i++){
+    result += courses[i] + "<br>";
+}
+
+document.getElementById("operations").innerHTML = result;
+
+
+
+
+let student = {
+    name: "Fiaz",
+    id: "CSE123",
+    department: "CSE",
+    cgpa: 3.80
+};
+
+let studentData = "";
+
+studentData += "Name: " + student.name + "<br>";
+studentData += "ID: " + student.id + "<br>";
+studentData += "Department: " + student.department + "<br>";
+studentData += "CGPA: " + student.cgpa + "<br>";
+
+document.getElementById("studentInfo").innerHTML = studentData;
+
+
+
+
+
+let students = [
+    {name:"Fiaz", id:"101", department:"CSE", cgpa:3.8},
+    {name:"Rahim", id:"102", department:"EEE", cgpa:3.6},
+    {name:"Karim", id:"103", department:"BBA", cgpa:3.7}
+];
+
+let studentsOutput = "";
+
+for(let i = 0; i < students.length; i++){
+    studentsOutput += "<b>Student " + (i+1) + "</b><br>";
+    studentsOutput += "Name: " + students[i].name + "<br>";
+    studentsOutput += "ID: " + students[i].id + "<br>";
+    studentsOutput += "Department: " + students[i].department + "<br>";
+    studentsOutput += "CGPA: " + students[i].cgpa + "<br><br>";
+}
+
+document.getElementById("studentsList").innerHTML = studentsOutput;
+
+</script>
+
+</body>
+</html>
