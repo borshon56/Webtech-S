@@ -1,0 +1,54 @@
+.box1{
+width:200px;
+height:80px;
+padding:10px;
+border:3px solid black;
+margin:20px;
+}
+
+.box2{
+width:200px;
+height:80px;
+padding:20px;
+border:3px solid red;
+margin:30px;
+}
+
+.box3{
+width:200px;
+height:80px;
+padding:10px;
+border:3px solid blue;
+margin:20px;
+box-sizing:border-box;
+}
+
+/* Display */
+
+.block{
+display:block;
+border:2px solid green;
+}
+
+.inline{
+display:inline;
+border:2px solid orange;
+}
+
+.inlineblock{
+display:inline-block;
+width:120px;
+height:50px;
+border:2px solid purple;
+}
+
+.none{
+display:none;
+}
+
+/* Visibility */
+
+.hidden{
+visibility:hidden;
+border:2px solid black;
+}
