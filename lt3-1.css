@@ -1,0 +1,56 @@
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+}
+
+.default {
+    box-sizing: content-box;
+}
+
+.border-box {
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+.padded {
+    padding: 40px;
+    background-color: lightcoral;
+}
+
+.block {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: yellow;
+    padding: 5px;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    background-color: orange;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.hidden-display {
+    display: none;
+}
+
+.hidden-visibility {
+    visibility: hidden;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Course Booking</title>
+    <link rel="stylesheet" href="labt.css">
+</head>
+<body>
+
+<header>
+    <h1>My Learning Portal</h1>
+</header>
+
+<main>
+    <fieldset>
+        <legend>Course Enrollment Panel</legend>
+
+        <p><b>Course:</b> JavaScript Basics</p>
+        <p><b>Fee per Seat:</b> 1000 Tk</p>
+
+        <label>Number of Seats:</label>
+        <input type="number" id="seats" value="1" min="1">
+
+        <p id="error" class="error"></p>
+
+        <p>Total Course Fee: <span id="courseTotal">1000</span> Tk</p>
+        <p id="discountMsg" class="success"></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Enrollment Details Form</legend>
+
+        <label>Full Name:</label>
+        <input type="text" id="name"><br>
+
+        <label>Email:</label>
+        <input type="email" id="email"><br>
+
+        <label>Class Type:</label>
+        <select id="classType">
+            <option value="online">Online Class</option>
+            <option value="campus">On-Campus Class</option>
+        </select>
+
+        <p>Final Payable Amount: <span id="finalAmount">1100</span> Tk</p>
+
+        <input type="checkbox" id="confirm">
+        <label>I confirm my enrollment details are correct</label><br>
+
+        <button id="submitBtn">Submit</button>
+    </fieldset>
+
+</main>
+
+<footer>
+    All Rights Reserved 2026
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Lab Task 01</title>
+</head>
+<body>
+
+    <h1>JavaScript Lab Task 01</h1>
+
+    <div id="output"></div>
+
+    <script>
+        
+        alert("Welcome to JavaScript Lab!");
+
+        console.log("Welcome to JavaScript Lab (Console)");
+
+        document.write("<h3>Welcome to JavaScript Lab (Document Write)</h3>");
+
+     
+        let studentName = "Borshon";
+        let studentAge = 22;
+
+        let nextAge = studentAge + 1;
+        let message = "Student Name: " + studentName + "<br>Age Next Year: " + nextAge;
+
+        document.getElementById("output").innerHTML += "<h3>Part B Output:</h3>" + message;
+
+     
+        let num1 = prompt("Enter first number:");
+        let num2 = prompt("Enter second number:");
+
+    
+        num1 = Number(num1);
+        num2 = Number(num2);
+
+        let sum = num1 + num2;
+        let diff = num1 - num2;
+        let product = num1 * num2;
+
+        document.getElementById("output").innerHTML += `
+            <h3>Part C Output:</h3>
+            Sum: ${sum} <br>
+            Difference: ${diff} <br>
+            Product: ${product}
+        `;
+
+        let checkNumber = prompt("Enter a number to check even or odd:");
+        checkNumber = Number(checkNumber);
+
+        let result;
+        if (checkNumber % 2 === 0) {
+            result = "Even Number";
+        } else {
+            result = "Odd Number";
+        }
+
+        document.getElementById("output").innerHTML += `
+            <h3>Part D Output:</h3>
+            ${checkNumber} is an ${result}
+        `;
+    </script>
+
+</body>
+</html>

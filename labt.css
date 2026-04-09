@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+fieldset {
+    width: 40%;
+    padding: 15px;
+}
+
+input, select {
+    margin: 8px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+#submitBtn {
+    display: none;
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

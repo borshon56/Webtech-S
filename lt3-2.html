@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Lab Task 03</title>
+</head>
+<body>
+
+    <h1>JavaScript Lab Task 03</h1>
+
+    <div id="output"></div>
+
+    <script>
+        let output = document.getElementById("output");
+
+    
+        let courses = ["C Programming", "Data Structures", "Database Systems", "Operating Systems", "Computer Networks"];
+
+        output.innerHTML += "<h3>Part A: Course List</h3>";
+
+
+        for (let i = 0; i < courses.length; i++) {
+            output.innerHTML += courses[i] + "<br>";
+        }
+
+    
+        courses.push("Artificial Intelligence");
+
+        output.innerHTML += "<br><b>After Adding New Course:</b><br>";
+        for (let i = 0; i < courses.length; i++) {
+            output.innerHTML += courses[i] + "<br>";
+        }
+
+        output.innerHTML += "<h3>Part B: Array Operations</h3>";
+
+       
+        let length = courses.length;
+
+     
+        let removed = courses.pop();
+
+  
+        courses.unshift("Mathematics");
+
+        output.innerHTML += `
+            Length of Array: ${length} <br>
+            Removed Element: ${removed} <br>
+            Final Array:
+        `;
+
+        for (let i = 0; i < courses.length; i++) {
+            output.innerHTML += courses[i] + "<br>";
+        }
+
+        let student = {
+            name: "Borshon Debnath",
+            id: "23-55078-3",
+            department: "CSE",
+            cgpa: 3.81
+        };
+
+        output.innerHTML += "<h3>Part C: Student Object</h3>";
+        output.innerHTML += `
+            Name: ${student.name} <br>
+            ID: ${student.id} <br>
+            Department: ${student.department} <br>
+            CGPA: ${student.cgpa}
+        `;
+
+    
+        let students = [
+            { name: "Borshon", id: "101", department: "CSE", cgpa: 3.8 },
+            { name: "Rahim", id: "102", department: "EEE", cgpa: 3.5 },
+            { name: "Karim", id: "103", department: "BBA", cgpa: 3.2 }
+        ];
+
+        output.innerHTML += "<h3>Part D: Array of Students</h3>";
+
+        for (let i = 0; i < students.length; i++) {
+            output.innerHTML += `
+                <b>Student ${i + 1}</b><br>
+                Name: ${students[i].name} <br>
+                ID: ${students[i].id} <br>
+                Department: ${students[i].department} <br>
+                CGPA: ${students[i].cgpa} <br><br>
+            `;
+        }
+    </script>
+
+</body>
+</html>
